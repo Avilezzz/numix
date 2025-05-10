@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de recargas movil ec</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+</head>
+<body>
+    <!-- ESto es el encabezado de la pagina -->
+    <header class="header">
+        <div>
+        <!-- <h2>NumixRec</h2> -->
+        <svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+          <!-- Teléfono -->
+          <g transform="translate(0, 5)">
+            <rect x="5" y="5" width="25" height="45" rx="5" ry="5" fill="#049cb3"/>
+            <circle cx="17.5" cy="43" r="2" fill="#fff"/>
+            <rect x="10" y="10" width="15" height="25" rx="2" ry="2" fill="#fff"/>
+          </g>
+        
+          <!-- Texto Numix -->
+          <text x="40" y="40" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" font-weight="bold">
+            Numix
+          </text>
+        </svg>
+        
+        </div>
+        <!-- Botón de hamburguesa -->
+  <button class="menu-toggle" aria-label="Abrir menú">
+    ☰
+  </button>
+        <nav class="nav">
+            <ul><li><a href="#">Como Recargar?</a></li></ul>
+        </nav>
+    </header>
+<!-- aqui ira os planes de cada operadora -->
+    <main>
+
+     <!-- Swiper -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide">
+        <img src="https://tb-static.uber.com/prod/image-proc/processed_images/e5b155e848894c1601afda1cd482b9cf/3ac2b39ad528f8c8c5dc77c59abb683d.jpeg" alt="Recarga 1">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://micnt.com.ec:8443/recargas/images/slice04.png" alt="Recarga 2">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://i.ytimg.com/vi/JYQi0WFiiF8/hq720.jpg?sqp=-oaymwE7CK4FEIIDSFryq4qpAy0IARUAAAAAGAElAADIQj0AgKJD8AEB-AH-DoACuAiKAgwIABABGH8gEyhBMA8=&rs=AOn4CLC6EZcQZyJZRCxcnh8mcjOvb3j_Rw" alt="Recarga 3">
+      </div>
+      <div class="swiper-slide">
+        <img src="https://i.ytimg.com/vi/_MlKVvi3LJM/maxresdefault.jpg?sqp=-oaymwEmCIAKENAF8quKqQMa8AEB-AH-DoACuAiKAgwIABABGBMgXCh_MA8=&rs=AOn4CLAyxf4T5og7diHeQjU7t6UlJppe5w" alt="Recarga 3">
+      </div>
+    </div>
+  
+    <!-- Paginación y botones opcionales -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <br>
+
+  <section class="content">
+      <div class="content_tittle">
+        <h1>¡Recarga tu celular en segundos!</h1>
+      </div>
+         <div class="content_parrafo">
+          <p>Solo necesitas tu número de teléfono. ¡Rápido, fácil y sin complicaciones! </p>
+         </div>
+      
+
+      <div class="card">
+        <div class="card_titulo">
+          <h2>Paquetes y combos
+
+          </h2>
+        </div>
+        <div class="card_contenedor_operadora">
+       <div class="card_operadora"><a href=""><img src="/logos_operadoras/1.png" alt=""></a></div>
+       <div class="card_operadora"><a href=""><img src="/logos_operadoras/2.png" alt=""></a></div>
+       <div class="card_operadora"><a href=""><img src="/logos_operadoras/3.png" alt=""></a></div>
+       <div class="card_operadora"><a href=""><img src="/logos_operadoras/4.png" alt=""></a></div>
+       
+      </div>
+      </div>
+
+  </section>
+   
+    </main>
+
+<!-- Modal para mostrar los planes -->
+<div id="planesModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Paquetes ilimitado de <span id="operadoraNombre"></span></h2>
+    <div id="planesContainer" class="planes-container">
+      <!-- Los planes se cargarán aquí dinámicamente -->
+    </div>
+  </div>
+</div>
+
+<!-- Segundo modal para confirmación de recarga -->
+<div id="confirmarModal" class="modal">
+  <div class="modal-content">
+    <span class="close-modal">&times;</span>
+    <h2 class="modal-title">Confirmar Recarga</h2>
+    
+    <div class="plan-seleccionado">
+      <img id="planSeleccionadoImg" src="" alt="Plan seleccionado" class="plan-img">
+      <div class="descripcionYprecio">
+      <div id="planSeleccionadoDesc" class="plan-descripcion"></div>
+      <div class="Planicon">
+        <p>Entrega: <span>INMEDIATA <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"><path fill="#32b800" fill-rule="evenodd" d="M12 21a9 9 0 1 0 0-18a9 9 0 0 0 0 18m-.232-5.36l5-6l-1.536-1.28l-4.3 5.159l-2.225-2.226l-1.414 1.414l3 3l.774.774z" clip-rule="evenodd"/></svg></span></p>
+      </div>
+      <div id="planSeleccionadoPrecio" class="plan-precio"></div>
+      
+      </div>
+    </div>
+    
+    <form id="formRecarga" class="form-recarga">
+  <div class="form-group">
+    <label for="numeroTelefono">Número de teléfono</label>
+    <input type="tel" id="numeroTelefono" placeholder="Ej: 0987654321" required>
+    <div class="error-message" id="telefonoError">Por favor ingrese un número ecuatoriano válido (10 dígitos)</div>
+  </div>
+  
+  <div class="form-buttons">
+    <button type="button" class="btn-cancelar">Cancelar</button>
+    <button type="submit" class="btn-guardar" >Guardar</button>
+  </div>
+</form>
+  </div>
+</div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  effect: 'coverflow',
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: 'auto',
+  loop: true,
+  autoplay: {
+    delay: 3000,
+  },
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 0,
+    depth: 100,
+    modifier: 2,
+    slideShadows: true,
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+});
+
+      </script>
+      <script>
+         const toggle = document.querySelector('.menu-toggle');
+  const nav = document.querySelector('.nav');
+  const body = document.body;
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('active');
+    body.classList.toggle('menu-open'); // Añade clase al body
+  });
+      </script>
+      
+      <script src="app.js"></script>
+</body>
+</html>

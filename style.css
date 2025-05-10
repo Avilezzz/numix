@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f7f7f7;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    
+    
+}
+body.menu-open main {
+    margin-top: 60px; /* Ajusta esto según tu diseño */
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    position: relative;
+    z-index: 10;
+    background-color: #049cb3;
+  }
+  .header h2{
+    color: #ffffff;
+  }
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #ffffff;
+  }
+  
+  /* Menú normal en pantallas grandes */
+  .nav {
+    display: flex;
+    gap: 1.2rem;
+    align-items: center;
+    color: #ffffff;
+  }
+  
+  /* Estilo de enlaces */
+  .nav ul {
+    list-style: none;
+  }
+  .nav ul a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 5px;
+    position: relative;
+    border: solid 1px #ffffff;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.3s ease-in-out;
+  }
+  .nav ul a::before {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 100%;
+    background: #ffffff;
+    top: 0;
+    left: 0;
+    border-radius: 5px;
+    z-index: -1;
+    transition: width 0.3s ease-in-out;
+  }
+  .nav ul a:hover::before {
+    width: 100%;
+  }
+  .nav ul a:hover {
+    color: #000000;
+  }
+  
+ 
+  
+main{
+    width: 80vw;
+    margin: 0 auto;
+    transition: margin-top 0.3s ease;
+    padding: 15px;
+   
+}
+
+.content{
+  text-align: center;
+}
+.content_tittle{
+  color: #049cb3;
+  font-size: clamp(1.2rem, 2vw + 1rem, 2.5rem);
+  margin-bottom: 1.5rem;
+}
+.content_parrafo{
+  margin-bottom: 1.5rem;
+}
+
+
+.card {
+
+  padding: 10px;
+  gap: 1rem;
+  background-color: #fff;         /* Opcional: mejor contraste */
+  border-radius: 0.5rem;          /* Suaviza los bordes */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);  /* Da profundidad */
+}
+.card_titulo{
+  position: relative;
+  padding: 10px;
+  color: #049cb3;
+  display: flex;
+  
+}
+.card_contenedor_operadora {
+  display: flex;
+  gap: 14px;
+  justify-content: space-between;
+  padding: 10px;
+ 
+}
+.card_operadora img{
+  width: calc(100% - 1px);     /* Ajusta el ancho con un pequeño margen */
+  max-width: 120px;            /* Asegura que no superen los 120px */
+  height: calc(100% - 1px);    /* Mantiene la proporción */
+  max-height: 120px;
+}
+.swiper {
+    width: 100%;
+    padding: 40px 0;
+    border-radius: 10px;
+    height: 300px; /* Deja que la altura se ajuste */
+  }
+  
+  .swiper-slide {
+    width: 90%; /* Ocupa casi todo el ancho en móviles */
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+  }
+  
+  
+  .swiper-slide img {
+    width: 100%;
+    height: auto; /* Mantiene la proporción */
+    object-fit: cover;
+    height: 100%;
+  }
+
+
+   /* Estilos responsivos */
+   @media (max-width: 768px) {
+    .menu-toggle {
+      display: block;
+    }
+  
+    .nav {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background: #049cb3;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 10px;
+      display: none; /* Oculto por defecto */
+    }
+  
+    .nav.active {
+      display: flex;
+    }
+  
+    .nav ul {
+      width: 100%;
+    }
+  
+    .nav ul li a {
+      display: block;
+      width: 100%;
+      border: none;
+      border-bottom: 1px solid #ccc;
+    }
+    .nav.active + main {
+        margin-top: 12px; /* Ajusta según la altura del menú */
+      }
+    main{
+        width: 100dvw;
+    }
+      .swiper-slide {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+        border-radius: 0px;
+      }
+    
+      .swiper {
+        height: 250px;
+        width: 100%;
+        border-radius: 0px;
+
+      }
+      .card_contenedor_operadora {
+        display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+ 
+}
+
+  }
+

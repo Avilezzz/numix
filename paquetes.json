@@ -1,0 +1,192 @@
+{
+  "operadoras": [
+    {
+      "nombre": "CLARO",
+      "paquetes": [
+        {
+          "numero": 1,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2289_20250228084634.png",
+          "descripcion": "NUEVO CLARO PAQ C 250MEGAS + LLAMADAS ILIMITADAS A CLARO MOVIL + WHATSAPP POR + 250 MEGAS PARA TIK TOK Y YOUTUBE 1 DIA",
+          "precio": 1.15
+        },
+        {
+          "numero": 2,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2290_20250228084812.png",
+          "descripcion": "NUEVO CLARO PAQ C 1 GB + LLAMADAS ILIMITADAS A CLARO MOVIL + WHATSAPP + 1GB PARA TIK TOK Y YOUTUBE 200 SMS A CLARO X 2 DÍAS",
+          "precio": 2.35
+        },
+        {
+          "numero": 3,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2291_20250228085156.png",
+          "descripcion": "NUEVO CLARO PAQ C 3 GIGAS + 3 GIGAS EN LA NOCHE + LLAMADAS ILIMITADAS A CLARO + 30 MINUTOS A OTRAS OPERADORAS +2 GB PARA YOUTUBE Y TIKTOK EN LA NOCHE + WHATSAPP + 300 SMS A CLARO X 3 DÍAS",
+          "precio": 3.40
+        },
+        {
+          "numero": 4,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2451_20250228085305.png",
+          "descripcion": "NUEVO CLARO PAQ C 4GB LIBRES + 2GB REDES LLAMADAS ILIMITADAS A CLARO + 30 MINUTOS A OTRAS OPERADORAS +300 SMS + 1GB PARA YOUTUBE Y TIKTOK + 2GB WHATSAPP GRATIS. 7 DÍAS",
+          "precio": 3.75
+        },
+        {
+          "numero": 5,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2297_20250228085432.png",
+          "descripcion": "NUEVO CLARO PAQ C 3 GIGAS + LLAMADAS ILIMITADAS A CLARO + 40 MINUTOS A OTRAS OPERADORAS + 2GB PARA YOUTUBE Y TIKTOK + 4GB WHATSAPP GRATIS. 10 DÍAS",
+          "precio": 4.40
+        },
+        {
+          "numero": 6,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2292_20250228085726.png",
+          "descripcion": "NUEVO CLARO PAQ C 3 GIGAS + LLAMADAS ILIMITADAS A 5 NÚMEROS CLARO + 50 MINUTOS A OTRAS OPERADORAS + 2GB PARA YOUTUBE Y TIKTOK PARA LA NOCHE + WHATSAPP",
+          "precio": 5.70
+        },
+        {
+          "numero": 7,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2534_20250228085817.png",
+          "descripcion": "NUEVO CLARO PAQ C SUSCRIPCIÓN A ECDF DESDE CLARO VIDEO 6GB: 4GB + 2GB YOUTUBE Y TIKTOK LLAMADAS ILIMITADAS A CLARO 30 MINUTOS A OTRAS OPERADORAS WHATSAPP DURACIÓN: 3 DÍAS",
+          "precio": 6.00
+        },
+        {
+          "numero": 8,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2452_20250228085923.png",
+          "descripcion": "NUEVO CLARO PAQ C 6 GIGAS + LLAMADAS ILIMITADAS A CLARO + 70 MINUTOS A TODAS LAS OPERADORAS + 2GB PARA YOUTUBE Y TIKTOK + 4GB WHATSAPP GRATIS + 10GB CLARO VIDEO. 20 DIAS.",
+          "precio": 7.25
+        }
+      ]
+    },
+    {
+      "nombre": "CNT",
+      "paquetes": [
+        {
+          "numero": 1,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$KD74dI1Mwf9WNjakQ1g0cOUjGbOsS17n1xhWqaTzLjwWv2xU9aFhO.png",
+          "descripcion": "PAQUETES CNT 1GB, 1 DÍA,15 MINUTOS A TODAS LAS OPERADORAS, ILIMITADOS A CNT, 50 SMS, 1 GB DE WHATSAPP, 512MB FACEBOOK Y 512MB TIKTOK",
+          "precio": 1.10
+        },
+        {
+          "numero": 2,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$zz46KI3Xeod2rBzPZABca.nPFccSCQiweRQem2byvzZbCIYIQtsqu.png",
+          "descripcion": "PAQUETES CNT 2GB, 3 DIAS, 25 MINUTOS A TODAS LAS OPERADORAS, ILIMITADOS A CNT, 50 SMS, 1 GB DE WHATSAPP, 512MB FACEBOOK Y 512MB TIKTOK",
+          "precio": 2.25
+        },
+        {
+          "numero": 3,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$J4eaMViebCVdCKs3GMerrO5cMM4i1HfR1gWWPrOIp4xSphgL/NBEa.png",
+          "descripcion": "PAQUETES CNT 4GB, 7 DÍAS - 35 MINUTOS A TODAS LAS OPERADORAS, ILIMITADO CNT FIJOS Y MOVILES, 50 SMS, 4GB WHATSAPP, 1GB FACEBOOK, INSTAGRAM Y TiKTOK",
+          "precio": 3.50
+        },
+        {
+          "numero": 4,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$hgjY0wYhXxfZqhckgcAFWOv7X/m5UhKy.jpCNi9RNAoBhZVHrPShi.png",
+          "descripcion": "PAQUETES CNT 5GB, 30 DÍA - 50 MINUTOS TODAS LAS OPERADORAS, ILIMITADO CNT FIJOS Y MOVILES, 50 SMS, 4GB WHAT, 1GB FB-INST-TITOK",
+          "precio": 5.50
+        },
+        {
+          "numero": 5,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$awRTMzQVghP0iO5fEw0DUucVxxPjqOeTn2OmK5CsMBkktJjjUEn5u.png",
+          "descripcion": "PAQUETES CNT 7GB, 30 DIAS, 100 MINUTOS A TODAS LAS OPERADORAS, ILIMITADOS A CNT, 30 MIN LDI, 50 SMS, 4 GB DE WHATSAPP, 1GB FACEBOOK, 1GB INSTAGRAM Y 1GB TIKTOK",
+          "precio": 7.00
+        },
+        {
+          "numero": 6,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$nvIDcwMuBWi9hflu9ATu0O4JjQ.087X8MeZCg62cMcDUTvi7qzIYq.png",
+          "descripcion": "PAQUETES CNT 15GB, 30 DÍA - 200 MINUTOS TODAS LAS OPERADORAS, ILIMITADO CNT FIJOS Y MOVILES, 30 MIN INTERN. 50 SMS, 4GB WHAT, 1GB FB-INST-TITOK",
+          "precio": 10.25
+        }
+      ]
+    },
+    {
+      "nombre": "TUENTI",
+      "paquetes": [
+        {
+          "numero": 1,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2714_20250401094334.png",
+          "descripcion": "PAQUETES TUENTI 500 MEGAS- LLAMADAS ILIMITADAS A TUENTI - 10 MINUTOS A OTRAS OPERADORAS - WHATSAPP Y SPOTIFY, 50 SMS + NAVEGA GRATIS EN UBER, UBER EATS, GOOGLE MAPS, 1 DIA",
+          "precio": 1.15
+        },
+        {
+          "numero": 2,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$Hu0xjxE6dguxzKuvKeHYN.Hfb2lzoPifkWbYEvmZpihQwP4eqjIWq.png",
+          "descripcion": "PAQUETES TUENTI 1 GB - LLAMADAS ILIMITADAS A TUENTI - 15 MINUTOS A OTRAS OPERADORAS - WHATSAPP Y SPOTIFY, 50 SMS + NAVEGA GRATIS EN UBER, UBER EATS, GOOGLE MAPS, 5 DIAS",
+          "precio": 2.25
+        },
+        {
+          "numero": 3,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$FVMl/DpEPYXOesVtBcgDmOgKr258bU9SMTZ97bJ/AruIloRraIZfy.png",
+          "descripcion": "PAQUETES TUENTI 3 GB - LLAMADAS ILIMITADAS A TUENTI - 30 MINUTOS A OTRAS OPERADORAS - WHATSAPP Y SPOTIFY, 50 SMS, 15 DÍAS",
+          "precio": 4.50
+        },
+        {
+          "numero": 4,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$cJDSYr1D8zftvOsZzJRPA.9XWkqHeG/UciRCK2bd9GSYItr58x.AG.png",
+          "descripcion": "PAQUETES TUENTI 7 GB - LLAMADAS ILIMITADAS A TUENTI - 60 MINUTOS A OTRAS OPERADORAS - WHATSAPP Y SPOTIFY, 50 SMS + NAVEGA GRATIS EN UBER, UBER EATS, GOOGLE MAPS, 30 DÍAS",
+          "precio": 8.50
+        },
+        {
+          "numero": 5,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$pHt0fute3Y2ydpaMY.0MxeVqSq8jaXUBKWiUGY2WVMb4/PJBc6DXu.png",
+          "descripcion": "PAQUETES TUENTI 10 GB - LLAMADAS ILIMITADAS A TUENTI - 100 MINUTOS A OTRAS OPERADORAS - WHATSAPP Y SPOTIFY - 50 SMS",
+          "precio": 10.40
+        },
+        {
+          "numero": 6,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$.uMxSW6EtEiJep9xhxh6Lu2ehRuuf7lh5c/sOGgDu89cpiH/qiuVq.png",
+          "descripcion": "PAQUETES TUENTI 20 GB - LLAMADAS ILIMITADAS A TUENTI - 400 MINUTOS A OTRAS OPERADORAS - WHATSAPP Y SPOTIFY - 50 SMS",
+          "precio": 20.25
+        }
+      ]
+    },
+    {
+      "nombre": "MOVISTAR",
+      "paquetes": [
+        {
+          "numero": 1,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2302_20250404093602.png",
+          "descripcion": "NUEVO MOVISTAR BE LLAMADAS ILIMITADAS A MOVISTAR + 10 MINUTOS A TODAS LAS OPERADORAS + WHATSAPP + 1GB + 10 SMS - 1 DIA",
+          "precio": 1.15
+        },
+        {
+          "numero": 2,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$xmY.1kmvV1MnmWhPIoUZoejtfKXFdsC67kLPqL/kJ5TPYOzIcru0K.png",
+          "descripcion": "NUEVO MOVISTAR BE BONO MOVISTAR 1GB X 4 DÍAS",
+          "precio": 2.25
+        },
+        {
+          "numero": 3,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$9Ao2nDpmfUP57V23rkGLSOooBq9NxvTm6/yHUDoYRejHw0X0zYcx..png",
+          "descripcion": "NUEVO MOVISTAR BE COMBO MOVISTAR  LLAMADAS ILIMITADAS A MOVISTAR + 25 MINUTOS A TODAS LAS OPERADORAS + WHATSAPP + 2GB + 10 SMS- 3 DIAS",
+          "precio": 2.25
+        },
+        {
+          "numero": 4,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2479_20250404095002.png",
+          "descripcion": "NUEVO MOVISTAR BE LLAMADAS ILIMITADAS A MOVISTAR +  30 MINUTOS A TODAS LAS OPERADORAS + WHATSAPP +3GB  + 10 SMS +2GB FACEBOOK, INSTAGRAM,X Y TIKTOK +5GB SPOTIFY - 7 DIAS",
+          "precio": 3.50
+        },
+        {
+          "numero": 5,
+          "imagen": "https://www.semprovec.com.ec/storage/$2y$10$Zy69FpE9Zzqz8SBXEDC8RuQYb9jRAdvHziUMzZMit0Nv2LkmCXily.png",
+          "descripcion": "NUEVO MOVISTAR BE BONO MOVISTAR 3GBX 15 DÍAS",
+          "precio": 4.50
+        },
+        {
+          "numero": 6,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2618_20250404095524.png",
+          "descripcion": "NUEVO MOVISTAR BE LLAMADAS ILIMITADAS A MOVISTAR + 70 MINUTOS A TODAS LAS OPERADORAS + WHATSAPP + 3GB + 3GB EN FACEBOOK, INSTAGRAM,X Y TIKTOK + 5GB SPOTIFY  + 10 SMS- 15 DIAS",
+          "precio": 5.75
+        },
+        {
+          "numero": 7,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2619_20250404095728.png",
+          "descripcion": "NUEVO MOVISTAR BE LLAMADAS ILIMITADAS A MOVISTAR + 100 MINUTOS A TODAS LAS OPERADORAS + WHATSAPP + 5GB   +  3GB EN FACEBOOK, INSTAGRAM,X Y TIKTOK  + 5GB SPOTIFY  + 10 SMS- 15 DIAS",
+          "precio": 6.50
+        },
+        {
+          "numero": 8,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2332_20250404093321.png",
+          "descripcion": "NUEVO MOVISTAR BE LLAMADAS ILIMITADAS A MOVISTAR + 80 MINUTOS A TODAS LAS OPERADORAS + WHATSAPP + 4GB INTERNET +4GB EN FACEBOOK, INSTAGRAM, X Y TIKTOK + 5GB SPOTIFY + 10 SMS - 20 DIAS",
+          "precio": 7.30
+        }
+      ]
+    }
+  ]
+}
