@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let operadoraSeleccionada = null; // Nueva variable para almacenar la operadora
   const modalPlanes = document.getElementById('planesModal');
   const modalConfirmar = document.getElementById('confirmarModal');
-  const tuNumeroWhatsapp = '59378652638'; // Tu número de WhatsApp
+  const tuNumeroWhatsapp = '593978652638'; // Tu número de WhatsApp
   
   // Cargar los datos del JSON
   fetch('paquetes.json')
