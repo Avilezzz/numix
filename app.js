@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
                    `Por favor confírmame la disponibilidad y el proceso de pago.`;
     
     const mensajeCodificado = encodeURIComponent(mensaje);
-    window.open(`https://wa.me/${tuNumeroWhatsapp}?text=${mensajeCodificado}`, '_blank');
+    window.open(`https://wa.me/59378652638?text=${mensajeCodificado}`, '_blank');
     
     // Cerrar modal y resetear formulario
     cerrarModal(modalConfirmar);
