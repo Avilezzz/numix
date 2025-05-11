@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
   let operadoraSeleccionada = null; // Nueva variable para almacenar la operadora
   const modalPlanes = document.getElementById('planesModal');
   const modalConfirmar = document.getElementById('confirmarModal');
-  const tuNumeroWhatsapp = '593967549140'; // Tu número de WhatsApp
+  const tuNumeroWhatsapp = '593978652638'; // Tu número de WhatsApp
   
   // Cargar los datos del JSON
   fetch('paquetes.json')
@@ -57,7 +57,6 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mostrar modal
     abrirModal(modalPlanes);
   }
-  
   // Función para mostrar la confirmación de recarga
   function mostrarConfirmacion() {
     if (!planSeleccionado) return;
@@ -105,14 +104,6 @@ document.addEventListener('DOMContentLoaded', function() {
     return regex.test(numero);
   }
   
-  // Formatear número para WhatsApp
-  function formatearNumeroWhatsapp(numero) {
-    // Si empieza con 0, reemplazar con 593
-    if (numero.startsWith('0')) {
-      return '593' + numero.substring(1);
-    }
-    return numero;
-  }
   
   // Evento para el formulario de recarga
   document.getElementById('formRecarga').addEventListener('submit', function(e) {
@@ -139,16 +130,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Resto del código para enviar a WhatsApp...
-    const numeroWhatsapp = formatearNumeroWhatsapp(numeroTelefono);
-    const mensaje = `¡Hola! Quiero solicitar una recarga:\n\n` +
-                   `*Operadora:* ${operadoraSeleccionada.nombre}\n` +
-                   `*Plan:* ${planSeleccionado.descripcion}\n` +
-                   `*Precio:* $${planSeleccionado.precio.toFixed(2)}\n` +
-                   `*Número a recargar:* ${numeroTelefono}\n\n` +
-                   `Por favor confírmame la disponibilidad y el proceso de pago.`;
-    
-    const mensajeCodificado = encodeURIComponent(mensaje);
-    window.open(`https://wa.me/59378652638?text=${mensajeCodificado}`, '_blank');
+    const numeroWhatsapp = tuNumeroWhatsapp;
+const mensaje = `⚡¡Hola! Quiero solicitar una recarga:\n\n` +
+                `*🔷OPERADORA:* ${operadoraSeleccionada.nombre}\n` +
+                `*🔷PAQUETE:* ${planSeleccionado.descripcion}\n` +
+                `*🔷PRECIO:* $${planSeleccionado.precio.toFixed(2)}\n` +
+                `*🔷NUMERO A RECARGAR:* ${numeroTelefono}\n\n` +
+                `Por favor confírmame la disponibilidad y el proceso de pago.`;
+
+const mensajeCodificado = encodeURIComponent(mensaje);
+
+// Importante: SIN espacios antes del `https`
+window.open(`https://api.whatsapp.com/send?phone=${numeroWhatsapp}&text=${mensajeCodificado}`, '_blank');
+
+
+
     
     // Cerrar modal y resetear formulario
     cerrarModal(modalConfirmar);

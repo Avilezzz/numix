@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cómo recargar - Numix</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="modal.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+    <style>
+        .como-recargar {
+            max-width: 800px;
+            margin: 2rem auto;
+            padding: 1.5rem;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        
+        .como-recargar h1 {
+            color: #049cb3;
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2rem;
+        }
+        
+        .paso {
+            display: flex;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+        
+        .numero-paso {
+            background-color: #049cb3;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            font-weight: bold;
+        }
+        
+        .contenido-paso {
+            flex-grow: 1;
+        }
+        
+        .contenido-paso h3 {
+            color: #049cb3;
+            margin-bottom: 0.5rem;
+        }
+        
+        .contenido-paso p {
+            color: #555;
+            line-height: 1.6;
+        }
+        
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .whatsapp-icon {
+            width: 24px;
+            height: 24px;
+        }
+        
+        .tiempo-proceso, .datos-bancarios {
+            background-color: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            border-left: 4px solid #049cb3;
+        }
+        
+        .tiempo-proceso h3, .datos-bancarios h3 {
+            color: #049cb3;
+            margin-bottom: 1rem;
+        }
+        
+        .cuenta-bancaria {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            padding: 1rem;
+            border-radius: 8px;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+        
+        .banco-logo {
+            width: 100px;
+            height: 100px;
+            object-fit: contain;
+            margin-right: 1rem;
+            border-radius: 50%;
+            background-color: white;
+            padding: 5px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .banco-info {
+            flex-grow: 1;
+        }
+        
+        .banco-nombre {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 0.3rem;
+        }
+        
+        .banco-cuenta {
+            color: #666;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+        
+        .copy-btn {
+            background-color: #049cb3;
+            color: white;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            cursor: pointer;
+            margin-left: 10px;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        
+        .copy-btn:hover {
+            background-color: #037a8b;
+        }
+        
+        .copy-icon {
+            width: 14px;
+            height: 14px;
+        }
+        
+        .tooltip {
+            position: relative;
+            display: inline-block;
+        }
+        
+        .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: #555;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px;
+            position: absolute;
+            z-index: 1;
+            bottom: 125%;
+            left: 50%;
+            margin-left: -60px;
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 0.8rem;
+        }
+        
+        .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            top: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: #555 transparent transparent transparent;
+        }
+        
+        .tooltip.show .tooltiptext {
+            visibility: visible;
+            opacity: 1;
+        }
+        .copy-btn {
+            touch-action: manipulation; /* Mejora la respuesta táctil */
+            padding: 8px 15px; /* Botón más grande para móviles */
+        }
+        
+        .tooltip .tooltiptext {
+            font-size: 0.9rem; /* Texto más legible en móviles */
+            width: 140px; /* Más ancho para móviles */
+            bottom: 150%; /* Posición mejorada para móviles */
+        }
+        
+        @media (max-width: 480px) {
+            .copy-btn {
+                padding: 10px 20px; /* Aún más grande en móviles pequeños */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .como-recargar {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            .paso {
+                flex-direction: column;
+            }
+            
+            .numero-paso {
+                margin-bottom: 0.5rem;
+            }
+            
+            .cuenta-bancaria {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .banco-logo {
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+            
+            .banco-cuenta {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado igual que en index.html -->
+    <header class="header">
+        <div>
+            <svg width="200" height="60" viewBox="0 0 200 60" xmlns="http://www.w3.org/2000/svg">
+                <g transform="translate(0, 5)">
+                    <rect x="5" y="5" width="25" height="45" rx="5" ry="5" fill="#049cb3"/>
+                    <circle cx="17.5" cy="43" r="2" fill="#fff"/>
+                    <rect x="10" y="10" width="15" height="25" rx="2" ry="2" fill="#fff"/>
+                </g>
+                <text x="40" y="40" font-family="Arial, sans-serif" font-size="28" fill="#ffffff" font-weight="bold">
+                    Numix
+                </text>
+            </svg>
+        </div>
+        <button class="menu-toggle" aria-label="Abrir menú">☰</button>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="como-recargar">
+            <h1>¿Cómo recargar con Numix?</h1>
+            
+            <div class="paso">
+                <div class="numero-paso">1</div>
+                <div class="contenido-paso">
+                    <h3>Selecciona tu paquete</h3>
+                    <p>Elige el paquete de datos, minutos o SMS que necesitas desde nuestra página principal. Tenemos opciones para todas las operadoras móviles del Ecuador.</p>
+                </div>
+            </div>
+            
+            <div class="paso">
+                <div class="numero-paso">2</div>
+                <div class="contenido-paso">
+                    <h3>Realiza la transferencia bancaria</h3>
+                    <p>Transfiere el valor exacto del paquete seleccionado a una de nuestras cuentas bancarias:</p>
+                    
+                    <div class="datos-bancarios">
+                        <h3>Nuestras cuentas bancarias</h3>
+                        
+                       <div class="cuenta-bancaria">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Logo_bg_2020.png" alt="Banco Guayaquil" class="banco-logo">
+        <div class="banco-info">
+            <div class="banco-nombre">Banco Guayaquil</div>
+            <div class="banco-cuenta">
+                Cuenta Ahorros: <span id="cuenta-bg">0126710671</span>
+                Nombre: <span id="cuenta-pichincha">Luis Fernando Avilez Cevallos</span>
+                <div class="tooltip">
+                    <button class="copy-btn" data-clipboard-target="#cuenta-bg">
+                        <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1z"/>
+                        </svg>
+                        Copiar
+                    </button>
+                    <span class="tooltiptext">¡Número copiado!</span>
+                </div>
+            </div>
+        </div>
+    </div>
+                        
+                      <div class="cuenta-bancaria">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Banco_Pichincha_logo.svg/2560px-Banco_Pichincha_logo.svg.png" alt="Banco Pichincha" class="banco-logo">
+    <div class="banco-info">
+        <div class="banco-nombre">Banco Pichincha</div>
+        <div class="banco-cuenta">
+            Cuenta Ahorros: <span id="cuenta-pichincha">7700283544</span>
+            Nombre: <span id="cuenta-pichincha">Luis Fernando Avilez Cevallos</span>
+            <div class="tooltip">
+                <button class="copy-btn" data-clipboard-target="#cuenta-pichincha">
+                    <svg class="copy-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M19 21H8V7h11m0-2H8a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h11a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2m-3-4H4a2 2 0 0 0-2 2v14h2V3h12V1z"/>
+                    </svg>
+                    Copiar
+                </button>
+                <span class="tooltiptext">¡Número copiado!</span>
+            </div>
+        </div>
+    </div>
+</div>
+            
+            <div class="paso">
+                <div class="numero-paso">3</div>
+                <div class="contenido-paso">
+                    <h3>Envía el comprobante por WhatsApp</h3>
+                    <p>Una vez realizada la transferencia, envía el comprobante al número de WhatsApp que aparece abajo. Incluye tu número de teléfono al que deseas aplicar la recarga.</p>
+                    <a href="https://wa.me/593978652638" class="whatsapp-btn" target="_blank">
+                        <svg class="whatsapp-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                            <path fill="currentColor" d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91c0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21c5.46 0 9.91-4.45 9.91-9.91c0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18l-3.12.82l.83-3.04l-.2-.31a8.264 8.264 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24c2.2 0 4.27.86 5.82 2.42a8.183 8.183 0 0 1 2.41 5.83c.02 4.54-3.68 8.23-8.22 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81c-.23-.08-.39-.12-.56.12c-.17.25-.64.81-.78.97c-.14.17-.29.19-.54.06c-.25-.12-1.05-.39-1.99-1.23c-.74-.66-1.23-1.47-1.38-1.72c-.14-.25-.02-.38.11-.51c.11-.11.25-.29.37-.43s.17-.25.25-.41c.08-.17.04-.31-.02-.43s-.56-1.34-.76-1.84c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31c-.22.25-.86.85-.86 2.07c0 1.22.89 2.4 1.01 2.56c.12.17 1.75 2.67 4.23 3.74c.59.26 1.05.41 1.41.52c.59.19 1.13.16 1.56.1c.48-.07 1.47-.6 1.67-1.18c.21-.58.21-1.07.14-1.18s-.22-.16-.47-.28z"/>
+                        </svg>
+                        Contactar por WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="paso">
+                <div class="numero-paso">4</div>
+                <div class="contenido-paso">
+                    <h3>Recibe tu recarga al instante</h3>
+                    <p>Una vez verificado el pago, tu recarga será aplicada inmediatamente a tu número móvil. Recibirás una confirmación por WhatsApp.</p>
+                </div>
+            </div>
+            
+            <div class="tiempo-proceso">
+                <h3>¿Cuánto tiempo toma el proceso?</h3>
+                <p>El tiempo de procesamiento de la recarga puede variar entre <strong>1 a 5 minutos</strong>. Una vez confirmado el pago, la recarga es <strong>inmediata</strong>.</p>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Menú toggle (mantén este código igual)
+        const toggle = document.querySelector('.menu-toggle');
+        const nav = document.querySelector('.nav');
+        const body = document.body;
+
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('active');
+            body.classList.toggle('menu-open');
+        });
+
+        // Inicializar Clipboard.js
+        const clipboard = new ClipboardJS('.copy-btn');
+        
+        // Mostrar tooltip al copiar
+        clipboard.on('success', function(e) {
+            const tooltip = e.trigger.parentElement;
+            tooltip.classList.add('show');
+            
+            // Ocultar después de 2 segundos
+            setTimeout(() => {
+                tooltip.classList.remove('show');
+            }, 2000);
+            
+            // Opcional: vibración en dispositivos móviles
+            if ('vibrate' in navigator) {
+                navigator.vibrate(50);
+            }
+            
+            e.clearSelection();
+        });
+        
+        // Manejar errores
+        clipboard.on('error', function(e) {
+            // Fallback: mostrar el número para copiar manualmente
+            const numero = e.trigger.getAttribute('data-clipboard-target') 
+                ? document.querySelector(e.trigger.getAttribute('data-clipboard-target')).textContent
+                : 'el número';
+            alert(`Por favor copia manualmente: ${numero}`);
+        });
+    </script>
+</body>
+</html>
