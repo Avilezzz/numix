@@ -201,7 +201,7 @@
     border: solid 1px #3dff3d;
     padding: 4px;
     border-radius: 3px;
-    background-color: #3dff3d17;
+    background-color: #3dff3d21;
 }
 /* Responsive para el modal */
 @media (max-width: 768px) {
