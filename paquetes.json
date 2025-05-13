@@ -5,6 +5,11 @@
       "paquetes": [
         {
           "numero": 1,
+          "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2684_20250228092419.png",
+          "descripcion": "FREE FIRE + CLARO TARJETA CLARO $1 + 100 DIAMANTES FREE FIRE",
+          "precio": 2.50
+        }, {
+          "numero": 1,
           "imagen": "https://www.semprovec.com.ec/storage/Subproductos/Semprovec_2289_20250228084634.png",
           "descripcion": "NUEVO CLARO PAQ C 250MEGAS + LLAMADAS ILIMITADAS A CLARO MOVIL + WHATSAPP POR + 250 MEGAS PARA TIK TOK Y YOUTUBE 1 DIA",
           "precio": 1.15
